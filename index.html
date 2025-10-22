@@ -7,99 +7,84 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    /* 🌿 Estilo geral */
-    body {
-      margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: linear-gradient(180deg, #faf9f5 0%, #fffaf0 100%);
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      text-align: center;
-      padding: 25px;
-    }
+/* 🌿 Estilo geral */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(180deg, #fffdf8 0%, #f4f1ea 100%);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
 
-    /* 🩺 Container central */
-    .container {
-      max-width: 400px;
-      width: 100%;
-      background: #ffffffd9;
-      border-radius: 25px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-      padding: 30px 25px 25px 25px;
-      animation: fadeIn 1.2s ease;
-    }
+/* 🌸 Card principal */
+.container {
+  background: #ffffff;
+  margin-top: 60px;
+  border-radius: 18px;
+  padding: 40px;
+  width: 90%;
+  max-width: 420px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
 
-    /* ✨ Animação de entrada */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
+/* 🧑‍⚕️ Foto da Janayna */
+.container img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #d9c7b0;
+}
 
-    /* 🖼️ Foto da Janayna */
-    img {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 4px solid #bfa45e;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      margin-bottom: 18px;
-      transition: transform 0.4s ease;
-    }
+/* 🪶 Nome e subtítulo */
+h1 {
+  font-size: 1.3em;
+  margin: 10px 0 5px;
+  color: #4a4a4a;
+}
 
-    img:hover {
-      transform: scale(1.05);
-    }
+h2 {
+  font-size: 0.95em;
+  font-weight: 500;
+  color: #6b705c;
+  margin-bottom: 25px;
+}
 
-    /* 🧡 Título e subtítulo */
-    h1 {
-      font-size: 22px;
-      margin: 8px 0 5px;
-      color: #4b6043;
-      font-weight: 600;
-    }
+/* 🌷 Botões */
+a.button {
+  display: block;
+  background: #b7c9a9;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 14px 20px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
 
-    p {
-      font-size: 15px;
-      color: #777;
-      margin-bottom: 25px;
-    }
+a.button:hover {
+  background: #9cb18c;
+  transform: translateY(-2px);
+}
 
-    /* 💬 Botões */
-    a.button {
-      display: block;
-      background: linear-gradient(90deg, #7fb77e 0%, #bfa45e 100%);
-      color: white;
-      text-decoration: none;
-      padding: 13px 0;
-      border-radius: 12px;
-      font-weight: 600;
-      margin: 10px 0;
-      transition: all 0.3s ease;
-      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-    }
+/* 💬 Ícones nos botões */
+a.button::before {
+  margin-right: 6px;
+}
 
-    a.button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 12px rgba(0,0,0,0.15);
-      filter: brightness(1.05);
-    }
-
-    footer {
-      margin-top: 25px;
-      font-size: 13px;
-      color: #aaa;
-    }
-
-    @media (max-width: 500px) {
-      .container { padding: 20px; }
-      img { width: 130px; height: 130px; }
-    }
-  </style>
+/* 🌼 Rodapé */
+footer {
+  margin-top: 25px;
+  font-size: 0.8em;
+  color: #777;
+}
+</style>
 </head>
 <body>
   <div class="container">
